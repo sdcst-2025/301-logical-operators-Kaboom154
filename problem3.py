@@ -30,3 +30,18 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+
+a = int(input("enter an integer: "))
+b = int(input("enter an integer: "))
+c = int(input("enter an integer: "))
+nums = [a,b,c]
+nums.sort()
+
+aa = nums[0]
+bb = nums[1]
+cc = nums[2]
+
+if aa**2 + bb**2 == cc**2:
+    print(f"{aa},{bb},{cc} form a Pythagorean triple")
+else:
+    print(f"{aa},{bb},{cc} do not form a Pythagorean triple")

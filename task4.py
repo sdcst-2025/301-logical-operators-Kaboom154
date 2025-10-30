@@ -21,5 +21,19 @@ Hi Gertrude! You are a VIP!
 Enter your name=>Gordon
 You are not a VIP.
 """
-
+name = input("enter your name: ")
+'''
 VIPNames = ("Guile","Blanka","Christine","Carol","Richard","Daniel","Chun-Li")
+VIPNamesLowCase = ("guile","blanka","christine","carol","richard","daniel","chun-li")
+
+if name in VIPNames or name in VIPNamesLowCase:
+    print(f"Hi {name}! You are a VIP!")
+else:
+    print('You are not a VIP.')
+
+'''
+
+if name == "Guile" or name == "guile" or name == "Blanka" or name == "blanka" or name == "Christine" or name == "christine" or name == "Carol" or name == "carol" or name == "Richard" or name == "richard" or name == "Daniel" or name == "daniel" or name == "Chun-Li" or name == "chun-li":
+    print(f"Hi {name}! You are a VIP!")
+else:
+    print("You are not a VIP.")
